@@ -1,0 +1,13 @@
+User-agent: *
+Host: https://topcarcleaning.ru/
+Sitemap: https://topcarcleaning.ru/sitemap.xml
+Disallow: /cleaning
+Disallow: /polishing
+Disallow: /tire_fitting
+Disallow: /tinting
+Disallow: /car_service
+Disallow: /dry_cleaning
+Disallow: /chrome_parts
+Disallow: /tire_storage
+Disallow: /freshness
+Disallow: /pasting

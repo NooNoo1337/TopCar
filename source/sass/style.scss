@@ -1,0 +1,38 @@
+// Global styles
+@import "general/variables";
+@import "general/mixins";
+@import "general/fonts";
+@import "general/normalize";
+@import "general/global";
+@import "general/visually-hidden";
+@import "general/templates";
+
+// preloader
+@import "blocks/preloader";
+
+// popups
+@import "libs/fancybox";
+
+// mobile menu
+@import "blocks/mobile-menu";
+
+// Header
+@import "blocks/header";
+
+// Первый экран
+@import "blocks/introduction";
+
+// Услуги
+@import "blocks/our-offer";
+
+// Акции
+@import "blocks/promotions";
+
+// Контакты
+@import "blocks/contacts";
+
+// Блок услуги на отдельной странице
+@import "blocks/offer";
+
+// Footer
+@import "blocks/footer";

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>TopCar - Придание свежести салону</title>
+  <meta name="description" content="Устраняем любые запахи в салоне, а также заправляем кондиционеры (круглосуточно)" />
+  <meta property="og:url" content="http://topcarcleaning.ru/freshness" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="TopCar - Придание свежести салону" />
+  <meta property="og:description" content="Устраняем любые запахи в салоне, а также заправляем кондиционеры (круглосуточно)"/>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= templates/favicons.html
+
+  <link rel="stylesheet" href="css/style.min.css">
+
+  //= templates/yandex.metrika.html
+</head>
+<body>
+//= templates/preloader.html
+
+//= templates/header.html
+
+<div class="content-wrapper">
+  <main class="main" role="main">
+    //= templates/introduction.html
+
+    <section class="offer">
+      <div class="offer__wrapper wrapper">
+        <h2 class="offer__title second-title">
+          Прайс-лист на услуги
+        </h2>
+        <table class="offer__table">
+          <tr>
+            <th>
+              Придание свежести салону
+            </th>
+
+            <th>
+
+            </th>
+
+            <th>
+
+            </th>
+
+            <th>
+
+            </th>
+
+            <th>
+
+            </th>
+          </tr>
+
+          <tr> <td> 1. Устранение запахов в салоне </td> <td colspan="4"> от 1500 ₽</td>  </tr>
+          <tr> <td> 2. Заправка кондиционера </td> <td colspan="4"> от 1500 ₽</td>  </tr>
+
+        </table>
+      </div>
+    </section>
+
+    //= templates/contacts_block.html
+  </main>
+
+  //= templates/footer.html
+</div>
+<!-- Map config -->
+<script src="js/map.js"></script>
+
+<!-- Google Maps Api -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCro3tHChMiGSgzL_9c4i_nZrinIxPum5o&callback=initMap" async defer></script>
+
+<!-- Polyfill for svgs -->
+<script src="js/libs/svg4everybody.min.js"></script>
+
+<!-- Jquery -->
+<script src="js/libs/jquery.min.js"></script>
+
+<script src="js/main.js"></script>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+        .register('service-worker.js')
+        .then(function () {
+          console.log("Service Worker Registered");
+        });
+  }
+
+</script>
+</body>
+</html>

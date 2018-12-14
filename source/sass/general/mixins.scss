@@ -1,0 +1,18 @@
+@mixin wrapper-padding($padding-vertical, $padding-horizontal) {
+ padding: $padding-vertical $padding-horizontal $padding-vertical $padding-horizontal;
+}
+
+// for google map
+@mixin center-align {
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+}
+
+@mixin absolute {
+ position: absolute;
+ top: 0;
+ right: 0;
+ bottom: 0;
+ left: 0;
+}

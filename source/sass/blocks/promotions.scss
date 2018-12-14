@@ -1,0 +1,155 @@
+@keyframes promotion_scale {
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
+}
+.promotions__wrapper {
+  position: relative;
+
+  @include wrapper-padding(40px, 20px);
+}
+
+.promotions {
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0,0,0,.8);
+  }
+}
+
+.promotion__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+  background-image: url("../../img/promotions_bg.webp"), url("../../img/promotions_bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.promotions__item {
+  position: relative;
+
+  width: 280px;
+  height: 280px;
+  margin-top: 60px;
+  padding: 20px;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  text-align: center;
+
+
+  &:nth-of-type(1) {
+    background-image: url("../../img/inst_promotion.webp"), url("../../img/inst_promotion.png");
+  }
+
+  &:nth-of-type(2) {
+    background-image: url("../../img/cleaning_promotion.webp"), url("../../img/cleaning_promotion.png");
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1;
+
+    border: 1px solid white;
+
+    animation: promotion_scale .6s ease-in-out;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    transform: scale(0);
+    transition: all .5s;
+  }
+}
+
+.promotions__item:hover {
+  &:after {
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+  }
+}
+
+.promotions__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.promotion__subtitle {
+  font-size: 22px;
+  color: white;
+  font-weight: 400;
+}
+
+.promotions__list {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.promotions__condition {
+  position: relative;
+  padding-left: 15px;
+}
+
+@media (min-width: 640px) {
+  .promotions__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 640px;
+  }
+
+  .promotions__item {
+    width: 300px;
+    height: 300px;
+  }
+
+}
+
+@media(min-width: 1024px) {
+  .promotions__wrapper {
+    @include wrapper-padding(60px, 20px);
+  }
+}
+

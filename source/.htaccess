@@ -1,0 +1,19 @@
+DirectoryIndex index.html
+RewriteEngine on
+RewriteRule ^index.html$ / [QSA,R]
+RewriteBase /
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP
+RewriteRule ^([^.]+)\.html$ https://topcarcleaning.ru/$1 [R=301,L]
+RewriteCond %{REQUEST_URI} !(\.[^./]+)$
+RewriteCond %{REQUEST_fileNAME} !-d
+RewriteCond %{REQUEST_fileNAME} !-f
+RewriteRule (.*) /$1.html [L]
+
+RewriteRule ^(.*)\$ $1.php [L]
+
+<files .htaccess="">
+order allow,deny
+deny from all
+</files>
+AddDefaultCharset utf-8
+AddType 'text/html; charset=utf-8' .html .htm .shtml

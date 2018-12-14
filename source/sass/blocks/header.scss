@@ -1,0 +1,272 @@
+.header {
+  z-index: 1;
+
+  width: 100%;
+
+  background-color: black;
+
+  transition-duration: .5s;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.header__icon {
+  fill: white;
+  stroke: white;
+
+  vertical-align: middle;
+  transition: all 0.3s;
+
+  &:hover {
+    fill: $yellow-color;
+  }
+}
+
+.header__menu-button {
+  position: relative;
+  z-index: 11;
+
+  width: 30px;
+  height: 30px;
+  padding: 0;
+
+  background-color: transparent;
+  border: transparent;
+  outline: none;
+  cursor: pointer;
+
+  font-size: 0;
+
+  transition: all 0.3s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 0;
+
+    width: 30px;
+    height: 2px;
+
+    background-color: #ffffff;
+    box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+  }
+}
+
+.header__menu-button--cross {
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 2px;
+    height: 30px;
+
+    background-color: white;
+    box-shadow: none;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    transform: rotate(-45deg);
+  }
+}
+
+.header__menu-button.black-color {
+  &:before {
+    background-color: black;
+    box-shadow: 0 8px 0 0 black, 0 16px 0 0 black;
+  }
+}
+
+.header__link {
+  cursor: pointer;
+
+  &--phone {
+    margin-left: auto;
+    margin-right: 30px;
+  }
+
+  &:hover {
+    color: $yellow-color;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.header__nav {
+  display: none;
+}
+
+.header__link--phone .text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@media (min-width: 700px) {
+  .mobile-menu {
+    display: none;
+  }
+
+  .header__nav {
+    display: block;
+    width: 100%;
+    max-width: 365px;
+  }
+
+  .header__drop-block {
+    position: absolute;
+    top: 80px;
+    left: calc(100% - 182px);
+    visibility: hidden;
+    opacity: 0;
+    z-index: 2;
+
+    width: 100vw;
+    padding: 20px;
+
+    box-shadow: 0 0 9px 0 rgba(0,0,0,.09);
+    background: white;
+
+    transition: all .3s cubic-bezier(.4,.2,.2,1);
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 145px;
+      bottom: 100%;
+      height: 0;
+      width: 0;
+      pointer-events: none;
+      border: solid transparent;
+      border-color: transparent transparent #fff;
+      border-width: 10px;
+    }
+
+    &.drop-list-opened {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(-40px);
+    }
+  }
+
+  .header__drop-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 600px;
+  }
+
+  .header__drop-list li {
+    margin-top: 15px;
+    width: 45%;
+  }
+
+  .header__drop-list li a {
+    padding: 5px 5px 5px 0;
+    color: black;
+
+    &:active {
+      opacity: 0.4;
+    }
+  }
+
+  .header__item {
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -30px;
+
+      width: 25px;
+      height: 1px;
+
+      background-color: white;
+
+      transform: rotate(90deg);
+    }
+  }
+
+  .header__wrapper {
+    @include wrapper-padding(25px, 20px)
+  }
+
+  .header__menu-button {
+    display: none;
+  }
+
+  .header__link {
+    font-size: 18px;
+    color: white;
+  }
+
+  .header__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
+@media (min-width: 800px) {
+  .header__icon {
+    &--phone {
+      display: none;
+    }
+  }
+
+  .header__link--phone {
+    padding: 4px 20px;
+    border-radius: 100px;
+    border: 1px solid white;
+
+    &:hover {
+      border: 1px solid $yellow-color;
+    }
+  }
+
+  .header__drop-block {
+    left: calc(100% - 202px);
+
+    &:before {
+      left: 165px;
+    }
+  }
+
+  .header__link--phone .text {
+    position: unset;
+    width: unset;
+    height: unset;
+    margin: unset;
+    border: 0;
+    padding: 0;
+    clip: unset;
+    overflow: unset;
+    font-size: 16px;
+  }
+
+  .header__wrapper {
+    @include wrapper-padding(25px, 40px)
+  }
+
+}

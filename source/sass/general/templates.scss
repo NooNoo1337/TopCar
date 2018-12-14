@@ -1,0 +1,171 @@
+.wrapper {
+  @include wrapper-padding(0px, 20px);
+}
+
+.content-wrapper {
+  width: 100%;
+  min-height: 100%;
+
+  transition-duration: 0.5s;
+}
+
+.menu-is-opened {
+  position: fixed;
+  overflow: hidden;
+  transform: translateX(220px);
+}
+
+.second-title {
+  position: relative;
+
+  width: fit-content;
+  margin: 0 auto;
+
+  font-family: "Roboto Bold","Arial",sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+
+  &--white {
+    color: white;
+  }
+
+  &:after, &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+
+    width: 50px;
+    height: 1px;
+
+    background-color: black;
+  }
+
+  &:after {
+    right: -70px;
+  }
+
+  &:before {
+    left: -70px;
+  }
+}
+
+.second-title--white {
+  &:after, &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+
+    width: 50px;
+    height: 1px;
+
+    background-color: white;
+  }
+}
+
+// popups
+.popup {
+  max-width: 620px !important;
+  padding: 30px;
+
+  background-color: black !important;
+
+  color: white;
+}
+
+.popup h4 {
+  position: relative;
+
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
+
+  &:after {
+    content: "";
+    position: absolute;
+    transform: translate(-50%, 0%);
+    left: 50%;
+    bottom: -10px;
+
+    width: 80px;
+    height: 1px;
+
+    background-color: $yellow-color;
+  }
+}
+
+.popup p {
+  font-size: 18px;
+  margin-top: 45px;
+}
+
+.popup ul {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.popup li:before {
+  content: "⬥";
+  position: absolute;
+  left: -1px;
+}
+
+.popup li + li {
+  margin-top: 10px;
+}
+
+.popup span {
+  font-size: 18px;
+  color: $yellow-color;
+}
+
+
+// add underline by hover and focus
+.underline_link {
+  position: relative;
+
+  &:after {
+    content: "";
+    position:absolute;
+    left:50%;
+
+    display: block;
+    width: 0%;
+    height: 2px;
+
+    background-color: black;
+
+    transition: width .3s ease-in-out;
+    transform:translateX(-50%);
+  }
+}
+
+.underline_link:hover:after,
+.underline_link:focus:after {
+  width: 100%;
+}
+
+@media (min-width: 400px) {
+  .second-title {
+    width: fit-content;
+
+    &:after, &:before {
+      width: 80px;
+    }
+
+    &:after {
+      right: -110px;
+    }
+
+
+    &:before {
+      left: -110px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .wrapper {
+    @include wrapper-padding(60px, 40px);
+  }
+}

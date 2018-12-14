@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>TopCar - Шиномонтаж</title>
+  <meta name="description" content='Осуществляем любые шиномонтажные работы (круглосуточно)' />
+  <meta property="og:url" content="http://topcarcleaning.ru/tire_fitting" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="TopCar - Шиномонтаж" />
+  <meta property="og:description" content='Осуществляем любые шиномонтажные работы (круглосуточно)'/>
+
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= templates/favicons.html
+  <link rel="stylesheet" href="css/style.min.css">
+
+  //= templates/yandex.metrika.html
+</head>
+<body>
+//= templates/preloader.html
+
+//= templates/header.html
+
+<div class="content-wrapper">
+  <main class="main" role="main">
+    //= templates/introduction.html
+
+    <section class="offer">
+      <div class="offer__wrapper wrapper">
+        <h2 class="offer__title second-title">
+          Прайс-лист на услуги
+        </h2>
+
+        <div class="offer__add-info">
+          <h3 class="offer__subtitle">
+            Для легковых автомобилей
+          </h3>
+          <p>
+            *Стоимость одного колеса в рублях
+          </p>
+        </div>
+
+        <table class="offer__table offer__table--no-margin" id="first_tire_fitting_table">
+          <tr>
+            <th>
+              Шиномонтаж:
+            </th>
+
+            <th>
+              R10-13
+            </th>
+
+            <th>
+              R14
+            </th>
+
+            <th>
+              R15
+            </th>
+
+            <th>
+              R16
+            </th>
+
+            <th>
+              R17
+            </th>
+
+            <th>
+              R18
+            </th>
+
+            <th>
+              R19
+            </th>
+
+            <th>
+              R20 и >
+            </th>
+          </tr>
+
+        </table>
+
+        <!-- Внедорожники -->
+        <div class="offer__add-info">
+          <h3 class="offer__subtitle">
+            Для внедорожников, паркетников, и микроавтобусов
+          </h3>
+          <p>
+            *Стоимость одного колеса в рублях
+          </p>
+        </div>
+
+        <table class="offer__table offer__table--no-margin" id="second_tire_fitting_table">
+          <tr>
+            <th>
+              Шиномонтаж:
+            </th>
+
+            <th>
+              R10-15
+            </th>
+
+            <th>
+              R16
+            </th>
+
+            <th>
+              R17
+            </th>
+
+            <th>
+              R18
+            </th>
+
+            <th>
+              R19
+            </th>
+
+            <th>
+              R20
+            </th>
+
+            <th>
+              R21
+            </th>
+
+            <th>
+              R22 и >
+            </th>
+          </tr>
+
+        </table>
+
+        <!-- Легковые с низким профилем -->
+        <div class="offer__add-info">
+          <h3 class="offer__subtitle">
+            Для легковых автомобилей с низким профилем (от 45 и меньше)
+          </h3>
+          <p>
+            *Стоимость одного колеса в рублях
+          </p>
+        </div>
+
+        <table class="offer__table offer__table--no-margin" id="third_tire_fitting_table">
+          <tr>
+            <th>
+              Шиномонтаж:
+            </th>
+
+            <th>
+              R10-15
+            </th>
+
+            <th>
+              R16
+            </th>
+
+            <th>
+              R17
+            </th>
+
+            <th>
+              R18
+            </th>
+
+            <th>
+              R19
+            </th>
+
+            <th>
+              R20
+            </th>
+
+            <th>
+              R21
+            </th>
+
+            <th>
+              R22 и >
+            </th>
+          </tr>
+
+        </table>
+
+        <!-- Внедорожники с низким профилем -->
+        <div class="offer__add-info">
+          <h3 class="offer__subtitle">
+            Для легковых автомобилей с низким профилем (от 45 и меньше)
+          </h3>
+          <p>
+            *Стоимость одного колеса в рублях
+          </p>
+        </div>
+
+        <table class="offer__table offer__table--no-margin" id="fourth_tire_fitting_table">
+          <tr>
+            <th>
+              Шиномонтаж:
+            </th>
+
+            <th>
+              R10-15
+            </th>
+
+            <th>
+              R16
+            </th>
+
+            <th>
+              R17
+            </th>
+
+            <th>
+              R18
+            </th>
+
+            <th>
+              R19
+            </th>
+
+            <th>
+              R20
+            </th>
+
+            <th>
+              R21
+            </th>
+
+            <th>
+              R22 и >
+            </th>
+          </tr>
+
+        </table>
+
+      </div>
+    </section>
+
+    //= templates/contacts_block.html
+  </main>
+
+  //= templates/footer.html
+</div>
+<!-- Map config -->
+<script src="js/map.js"></script>
+
+<!-- Google Maps Api -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCro3tHChMiGSgzL_9c4i_nZrinIxPum5o&callback=initMap" async defer></script>
+
+<!-- Polyfill for svgs -->
+<script src="js/libs/svg4everybody.min.js"></script>
+
+<!-- Jquery -->
+<script src="js/libs/jquery.min.js"></script>
+
+<script src="js/main.js"></script>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+        .register('service-worker.js')
+        .then(function () {
+          console.log("Service Worker Registered");
+        });
+  }
+
+</script>
+</body>
+</html>
