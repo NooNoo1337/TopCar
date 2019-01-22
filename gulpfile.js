@@ -32,6 +32,7 @@ var path = {
     favicons: 'source/favicons/**/*.*',
     html: 'source/*.html',
     js: 'source/js/**/*.js',
+    react: 'source/react/**/*.js',
     style: 'source/sass/style.scss',
     img: 'source/img/**/*.*',
     fonts: 'source/fonts/**/*.*'
@@ -41,6 +42,7 @@ var path = {
     favicons: 'build/favicons/',
     html: 'build/',
     js: 'build/js/',
+    react: 'build/react/',
     css: 'build/css/',
     img: 'build/img/',
     fonts: 'build/fonts/'
@@ -50,6 +52,7 @@ var path = {
     favicons: 'source/favicons/**/*.*',
     html: 'source/**/*.html',
     js: 'source/js/**/*.js',
+    react: 'source/react/**/*.js',
     style: 'source/sass/**/*.scss',
     img: 'source/img/**/*.*',
     fonts: 'source/fonts/**/*.*'
@@ -102,6 +105,13 @@ gulp.task('js', function () {
       // .pipe(gzip({}))
       .pipe(sourcemaps.write())
       .pipe(gulp.dest(path.build.js))
+      .pipe(server.stream());
+});
+
+// REACT
+gulp.task('react', function () {
+  return gulp.src(path.src.react)
+      .pipe(gulp.dest(path.build.react))
       .pipe(server.stream());
 });
 
@@ -257,10 +267,11 @@ gulp.task("build", function (done) {
       'stripComments',
       'style',
       'js',
+      'react',
       // 'fonts',
       // 'images',
-      'img',
-      'webp',
+      // 'img',
+      // 'webp',
       'sprite',
       done
   );
@@ -280,6 +291,7 @@ gulp.task("serve", function() {
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("source/**/*.html", ["html"], ["typography"]);
   gulp.watch("source/js/**/*.js", ["js"]);
+  gulp.watch("source/react/**/*.js", ["react"]);
   gulp.watch("source/img/**/*.{png,jpg,JPEG}",["img"]);
   gulp.watch("source/img/**/*.svg",["sprite"]);
 });

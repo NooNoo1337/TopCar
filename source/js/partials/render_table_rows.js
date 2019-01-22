@@ -185,8 +185,10 @@
       fourth_price: 800,
     },
   ];
+
   const dry_cleaning_collection = [
     {
+      id: 0,
       title: 'Химчистка потолка',
       first_price: 1000,
       second_price: 1500,
@@ -195,6 +197,7 @@
     },
 
     {
+      id: 1,
       title: 'Химчистка пола',
       first_price: 1500,
       second_price: 2000,
@@ -203,6 +206,7 @@
     },
 
     {
+      id: 2,
       title: 'Химчистка сидений',
       first_price: 2000,
       second_price: 2000,
@@ -211,6 +215,7 @@
     },
 
     {
+      id: 3,
       title: 'Химчистка обшивки дверей',
       first_price: 1000,
       second_price: 1000,
@@ -219,6 +224,7 @@
     },
 
     {
+      id: 4,
       title: 'Химчистка приборной панели',
       first_price: 1000,
       second_price: 1000,
@@ -227,6 +233,7 @@
     },
 
     {
+      id: 5,
       title: 'Химчистка напольного коврика',
       first_price: 200,
       second_price: 200,
@@ -235,6 +242,7 @@
     },
 
     {
+      id: 6,
       title: 'Химчистка багажника',
       first_price: 1000,
       second_price: 1000,
@@ -243,6 +251,7 @@
     },
 
     {
+      id: 7,
       title: 'Полная химчистка, включает услуги: 1, 2, 3, 4, 5, 6',
       add_info: '(включает в себя все виды услуг по химчистке)',
       first_price: 5000,
@@ -252,8 +261,10 @@
     },
 
   ];
+
   const polishing_cleaning_collection = [
     {
+      id: 0,
       title: 'Глубокая очистка ЛКП',
       first_price: 1500,
       second_price: 2000,
@@ -262,6 +273,7 @@
     },
 
     {
+      id: 1,
       title: 'Полировка 1ой вертикальной детали',
       first_price: 600,
       second_price: 700,
@@ -270,6 +282,7 @@
     },
 
     {
+      id: 2,
       title: 'Полировка 1ой горизонтальной детали',
       first_price: 1200,
       second_price: 1400,
@@ -278,6 +291,7 @@
     },
 
     {
+      id: 3,
       title: 'Полировка 1ой фары',
       first_price: 500,
       second_price: 500,
@@ -286,6 +300,7 @@
     },
 
     {
+      id: 4,
       title: 'Полная полировка автомобиля',
       add_info: '(все полировочные услуги)',
       first_price: 8000,
@@ -295,6 +310,7 @@
     },
 
     {
+      id: 5,
       title: 'Дополнительная обработка 1ой детали',
       first_price: 600,
       second_price: 700,
@@ -303,6 +319,7 @@
     },
 
     {
+      id: 6,
       title: 'Дополнительная обработка крыши или капота',
       first_price: 1200,
       second_price: 1400,
@@ -311,6 +328,7 @@
     },
 
     {
+      id: 7,
       title: 'Дополнительная обработка всего кузова',
       first_price: 5000,
       second_price: 9000,
@@ -319,6 +337,7 @@
     },
 
     {
+      id: 8,
       title: 'Восстановление глянца',
       first_price: 4000,
       second_price: 4500,
@@ -327,6 +346,7 @@
     },
 
     {
+      id: 9,
       title: 'Нано-обработка лобового стекла',
       first_price: 1000,
       second_price: 1200,
@@ -335,6 +355,7 @@
     },
 
     {
+      id: 10,
       title: 'Нано-обработка всх стекл, зеркал и фар',
       first_price: 2500,
       second_price: 3000,
@@ -343,6 +364,7 @@
     },
 
     {
+      id: 11,
       title: 'Обработка Лкл "НАНО_ЛАК"',
       first_price: 5000,
       second_price: 5500,
@@ -351,6 +373,7 @@
     },
 
     {
+      id: 12,
       title: 'Защитная полировка "MEGUIAR\'S"',
       first_price: 2500,
       second_price: 3000,
@@ -359,6 +382,7 @@
     },
 
     {
+      id: 13,
       title: 'Защитная полировка жидким стеклом',
       first_price: 10000,
       second_price: 12000,
@@ -367,6 +391,7 @@
     },
 
     {
+      id: 14,
       title: 'Защитная кермамическая обработка кузова',
       first_price: 15000,
       second_price: 17000,
@@ -374,8 +399,10 @@
       fourth_price: 25000,
     },
   ];
+
   const chome_parts_collection = [
     {
+      id: 0,
       title: 'Решетка радиатора, накладки дв., багажника, бампера, насадки труб',
       first_price: 700,
       second_price: 700,
@@ -384,6 +411,7 @@
     },
 
     {
+      id: 1,
       title: 'Передняя защитная решетка',
       first_price: 300,
       second_price: 300,
@@ -396,6 +424,7 @@
   // легковые авто
   const first_tire_collection = [
     {
+      id: 0,
       offer_type: 'tire_fix',
       title: 'Cнятие и установка колеса',
       first_price: 70,
@@ -409,6 +438,7 @@
     },
 
     {
+      id: 1,
       offer_type: 'tire_fix',
       title: 'Демонтаж шины',
       first_price: 80,
@@ -422,6 +452,7 @@
     },
 
     {
+      id: 2,
       offer_type: 'tire_fix',
       title: 'Монтаж шины',
       first_price: 80,
@@ -435,6 +466,7 @@
     },
 
     {
+      id: 3,
       offer_type: 'tire_fix',
       title: 'Балансировка колеса',
       first_price: 170,
@@ -448,6 +480,7 @@
     },
 
     {
+      id: 4,
       offer_type: 'tire_fix',
       title: 'Полный комплекс за 1 колесо',
       first_price: 400,
@@ -461,6 +494,7 @@
     },
 
     {
+      id: 5,
       offer_type: 'tire_fix',
       title: 'Полный комплекс за 1 комплект',
       first_price: 1600,
@@ -474,6 +508,7 @@
     },
 
     {
+      id: 6,
       offer_type: 'tire_fix',
       title: 'Рапфлет  комплект',
       first_price: '+1000',
@@ -490,6 +525,7 @@
   // внедорожники
   const second_tire_collection = [
     {
+      id: 0,
       offer_type: 'tire_fix',
       title: 'Cнятие и установка колеса',
       first_price: 110,
@@ -503,6 +539,7 @@
     },
 
     {
+      id: 1,
       offer_type: 'tire_fix',
       title: 'Демонтаж шины',
       first_price: 140,
@@ -516,6 +553,7 @@
     },
 
     {
+      id: 2,
       offer_type: 'tire_fix',
       title: 'Монтаж шины',
       first_price: 140,
@@ -529,6 +567,7 @@
     },
 
     {
+      id: 3,
       offer_type: 'tire_fix',
       title: 'Балансировка колеса',
       first_price: 240,
@@ -542,6 +581,7 @@
     },
 
     {
+      id: 4,
       offer_type: 'tire_fix',
       title: 'Полный комплекс за 1 колесо',
       first_price: 630,
@@ -555,6 +595,7 @@
     },
 
     {
+      id: 5,
       offer_type: 'tire_fix',
       title: 'Полный комплекс за 1 комплект',
       first_price: 2520,
@@ -568,6 +609,7 @@
     },
 
     {
+      id: 6,
       offer_type: 'tire_fix',
       title: 'Рапфлет  комплект',
       first_price: '+1000',
@@ -584,6 +626,7 @@
   // легковые авто c низким профилем
   const third_tire_collection = [
     {
+      id: 0,
       offer_type: 'tire_fix',
       title: 'Cнятие и установка колеса',
       first_price: 120,
@@ -597,6 +640,7 @@
     },
 
     {
+      id: 1,
       offer_type: 'tire_fix',
       title: 'Демонтаж шины',
       first_price: 120,
@@ -610,6 +654,7 @@
     },
 
     {
+      id: 2,
       offer_type: 'tire_fix',
       title: 'Монтаж шины',
       first_price: 120,
@@ -623,6 +668,7 @@
     },
 
     {
+      id: 3,
       offer_type: 'tire_fix',
       title: 'Балансировка колеса',
       first_price: 230,
@@ -636,6 +682,7 @@
     },
 
     {
+      id: 4,
       offer_type: 'tire_fix',
       title: 'Полный комплекс за 1 колесо',
       first_price: 590,
@@ -649,6 +696,7 @@
     },
 
     {
+      id: 5,
       offer_type: 'tire_fix',
       title: 'Полный комплекс за 1 комплект',
       first_price: 2360,
@@ -662,6 +710,7 @@
     },
 
     {
+      id: 6,
       offer_type: 'tire_fix',
       title: 'Рапфлет  комплект',
       first_price: '+1000',
@@ -678,6 +727,7 @@
   // внедорожники c низким профилем
   const fourth_tire_collection = [
     {
+      id: 0,
       offer_type: 'tire_fix',
       title: 'Cнятие и установка колеса',
       first_price: 140,
@@ -691,6 +741,7 @@
     },
 
     {
+      id: 1,
       offer_type: 'tire_fix',
       title: 'Демонтаж шины',
       first_price: 140,
@@ -704,6 +755,7 @@
     },
 
     {
+      id: 2,
       offer_type: 'tire_fix',
       title: 'Монтаж шины',
       first_price: 160,
@@ -717,6 +769,7 @@
     },
 
     {
+      id: 3,
       offer_type: 'tire_fix',
       title: 'Балансировка колеса',
       first_price: 275,
@@ -730,6 +783,7 @@
     },
 
     {
+      id: 4,
       offer_type: 'tire_fix',
       title: 'Полный комплекс за 1 колесо',
       first_price: 715,
@@ -743,6 +797,7 @@
     },
 
     {
+      id: 5,
       offer_type: 'tire_fix',
       title: 'Полный комплекс за 1 комплект',
       first_price: 2860,
@@ -756,6 +811,7 @@
     },
 
     {
+      id: 6,
       offer_type: 'tire_fix',
       title: 'Рапфлет  комплект',
       first_price: '+1000',
@@ -785,23 +841,23 @@
 
   }
 
-  renderOfferTable(cleaning_table, cleaning_collection);
-  renderOfferTable(polishing_table, polishing_cleaning_collection);
-  renderOfferTable(dry_cleaning_table, dry_cleaning_collection);
-  renderOfferTable(chrome_parts_table, chome_parts_collection);
+  // renderOfferTable(cleaning_table, cleaning_collection);
+  // renderOfferTable(polishing_table, polishing_cleaning_collection);
+  // renderOfferTable(dry_cleaning_table, dry_cleaning_collection);
+  // renderOfferTable(chrome_parts_table, chome_parts_collection);
 
   // Шиномонтаж
 
   // Легковые автомобили
-  renderOfferTable(first_tire_table, first_tire_collection);
-
-  // Внедорожники
-  renderOfferTable(second_tire_table, second_tire_collection);
-
-  // Легковые с низким профилем
-  renderOfferTable(third_tire_table, third_tire_collection);
-
-  // Внедорожники с низким профилем
-  renderOfferTable(fourth_tire_table, fourth_tire_collection);
+  // renderOfferTable(first_tire_table, first_tire_collection);
+  //
+  // // Внедорожники
+  // renderOfferTable(second_tire_table, second_tire_collection);
+  //
+  // // Легковые с низким профилем
+  // renderOfferTable(third_tire_table, third_tire_collection);
+  //
+  // // Внедорожники с низким профилем
+  // renderOfferTable(fourth_tire_table, fourth_tire_collection);
 
 }());

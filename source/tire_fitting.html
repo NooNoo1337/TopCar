@@ -42,46 +42,7 @@
           </p>
         </div>
 
-        <table class="offer__table offer__table--no-margin" id="first_tire_fitting_table">
-          <tr>
-            <th>
-              Шиномонтаж:
-            </th>
-
-            <th>
-              R10-13
-            </th>
-
-            <th>
-              R14
-            </th>
-
-            <th>
-              R15
-            </th>
-
-            <th>
-              R16
-            </th>
-
-            <th>
-              R17
-            </th>
-
-            <th>
-              R18
-            </th>
-
-            <th>
-              R19
-            </th>
-
-            <th>
-              R20 и >
-            </th>
-          </tr>
-
-        </table>
+        <div class="offer__table-container" id="offer__table-container"></div>
 
         <!-- Внедорожники -->
         <div class="offer__add-info">
@@ -93,46 +54,7 @@
           </p>
         </div>
 
-        <table class="offer__table offer__table--no-margin" id="second_tire_fitting_table">
-          <tr>
-            <th>
-              Шиномонтаж:
-            </th>
-
-            <th>
-              R10-15
-            </th>
-
-            <th>
-              R16
-            </th>
-
-            <th>
-              R17
-            </th>
-
-            <th>
-              R18
-            </th>
-
-            <th>
-              R19
-            </th>
-
-            <th>
-              R20
-            </th>
-
-            <th>
-              R21
-            </th>
-
-            <th>
-              R22 и >
-            </th>
-          </tr>
-
-        </table>
+        <div class="offer__table-container" id="tireFixSecond"></div>
 
         <!-- Легковые с низким профилем -->
         <div class="offer__add-info">
@@ -144,46 +66,7 @@
           </p>
         </div>
 
-        <table class="offer__table offer__table--no-margin" id="third_tire_fitting_table">
-          <tr>
-            <th>
-              Шиномонтаж:
-            </th>
-
-            <th>
-              R10-15
-            </th>
-
-            <th>
-              R16
-            </th>
-
-            <th>
-              R17
-            </th>
-
-            <th>
-              R18
-            </th>
-
-            <th>
-              R19
-            </th>
-
-            <th>
-              R20
-            </th>
-
-            <th>
-              R21
-            </th>
-
-            <th>
-              R22 и >
-            </th>
-          </tr>
-
-        </table>
+        <div class="offer__table-container" id="tireFixThird"></div>
 
         <!-- Внедорожники с низким профилем -->
         <div class="offer__add-info">
@@ -195,46 +78,7 @@
           </p>
         </div>
 
-        <table class="offer__table offer__table--no-margin" id="fourth_tire_fitting_table">
-          <tr>
-            <th>
-              Шиномонтаж:
-            </th>
-
-            <th>
-              R10-15
-            </th>
-
-            <th>
-              R16
-            </th>
-
-            <th>
-              R17
-            </th>
-
-            <th>
-              R18
-            </th>
-
-            <th>
-              R19
-            </th>
-
-            <th>
-              R20
-            </th>
-
-            <th>
-              R21
-            </th>
-
-            <th>
-              R22 и >
-            </th>
-          </tr>
-
-        </table>
+        <div class="offer__table-container" id="tireFixFourth"></div>
 
       </div>
     </section>
@@ -267,6 +111,405 @@
         });
   }
 
+  const offerCollection = [
+    {
+      id: 0,
+      offer_type: 'tire_fix',
+      title: 'Cнятие и установка колеса',
+      first_price: 70,
+      second_price: 80,
+      third_price: 100,
+      fourth_price: 110,
+      fifth_price: 150,
+      sixth_price: 180,
+      seventh_price: 220,
+      eighth_price: 220,
+    },
+
+    {
+      id: 1,
+      offer_type: 'tire_fix',
+      title: 'Демонтаж шины',
+      first_price: 80,
+      second_price: 90,
+      third_price: 100,
+      fourth_price: 120,
+      fifth_price: 150,
+      sixth_price: 180,
+      seventh_price: 200,
+      eighth_price: 250,
+    },
+
+    {
+      id: 2,
+      offer_type: 'tire_fix',
+      title: 'Монтаж шины',
+      first_price: 80,
+      second_price: 90,
+      third_price: 120,
+      fourth_price: 130,
+      fifth_price: 170,
+      sixth_price: 190,
+      seventh_price: 220,
+      eighth_price: 250,
+    },
+
+    {
+      id: 3,
+      offer_type: 'tire_fix',
+      title: 'Балансировка колеса',
+      first_price: 170,
+      second_price: 180,
+      third_price: 190,
+      fourth_price: 240,
+      fifth_price: 250,
+      sixth_price: 300,
+      seventh_price: 350,
+      eighth_price: 400,
+    },
+
+    {
+      id: 4,
+      offer_type: 'tire_fix',
+      title: 'Полный комплекс за 1 колесо',
+      first_price: 400,
+      second_price: 440,
+      third_price: 510,
+      fourth_price: 600,
+      fifth_price: 720,
+      sixth_price: 850,
+      seventh_price: 980,
+      eighth_price: 1120,
+    },
+
+    {
+      id: 5,
+      offer_type: 'tire_fix',
+      title: 'Полный комплекс за 1 комплект',
+      first_price: 1600,
+      second_price: 1760,
+      third_price: 2040,
+      fourth_price: 2400,
+      fifth_price: 2880,
+      sixth_price: 3400,
+      seventh_price: 3920,
+      eighth_price: 4480,
+    },
+
+    {
+      id: 6,
+      offer_type: 'tire_fix',
+      title: 'Рапфлет  комплект',
+      first_price: '+1000',
+      second_price: '+1000',
+      third_price: '+1000',
+      fourth_price: '+1000',
+      fifth_price: '+1000',
+      sixth_price: '+1000',
+      seventh_price: '+1000',
+      eighth_price: '+1000',
+    },
+  ];
+  const offerCollectionSecond = [
+    {
+      id: 0,
+      offer_type: 'tire_fix',
+      title: 'Cнятие и установка колеса',
+      first_price: 110,
+      second_price: 120,
+      third_price: 120,
+      fourth_price: 150,
+      fifth_price: 180,
+      sixth_price: 190,
+      seventh_price: 250,
+      eighth_price: 250,
+    },
+
+    {
+      id: 1,
+      offer_type: 'tire_fix',
+      title: 'Демонтаж шины',
+      first_price: 140,
+      second_price: 150,
+      third_price: 170,
+      fourth_price: 210,
+      fifth_price: 240,
+      sixth_price: 280,
+      seventh_price: 350,
+      eighth_price: 400,
+    },
+
+    {
+      id: 2,
+      offer_type: 'tire_fix',
+      title: 'Монтаж шины',
+      first_price: 140,
+      second_price: 160,
+      third_price: 170,
+      fourth_price: 210,
+      fifth_price: 240,
+      sixth_price: 280,
+      seventh_price: 350,
+      eighth_price: 400,
+    },
+
+    {
+      id: 3,
+      offer_type: 'tire_fix',
+      title: 'Балансировка колеса',
+      first_price: 240,
+      second_price: 280,
+      third_price: 330,
+      fourth_price: 390,
+      fifth_price: 450,
+      sixth_price: 530,
+      seventh_price: 650,
+      eighth_price: 700,
+    },
+
+    {
+      id: 4,
+      offer_type: 'tire_fix',
+      title: 'Полный комплекс за 1 колесо',
+      first_price: 630,
+      second_price: 710,
+      third_price: 790,
+      fourth_price: 960,
+      fifth_price: 1100,
+      sixth_price: 1330,
+      seventh_price: 1600,
+      eighth_price: 1750,
+    },
+
+    {
+      id: 5,
+      offer_type: 'tire_fix',
+      title: 'Полный комплекс за 1 комплект',
+      first_price: 2520,
+      second_price: 2840,
+      third_price: 3200,
+      fourth_price: 3840,
+      fifth_price: 4440,
+      sixth_price: 5320,
+      seventh_price: 6400,
+      eighth_price: 7000,
+    },
+
+    {
+      id: 6,
+      offer_type: 'tire_fix',
+      title: 'Рапфлет  комплект',
+      first_price: '+1000',
+      second_price: '+1000',
+      third_price: '+1000',
+      fourth_price: '+1000',
+      fifth_price: '+1000',
+      sixth_price: '+1000',
+      seventh_price: '+1000',
+      eighth_price: '+1000',
+    },
+  ];
+  const offerCollectionThird = [
+    {
+      id: 0,
+      offer_type: 'tire_fix',
+      title: 'Cнятие и установка колеса',
+      first_price: 120,
+      second_price: 130,
+      third_price: 150,
+      fourth_price: 180,
+      fifth_price: 200,
+      sixth_price: 220,
+      seventh_price: 250,
+      eighth_price: 250,
+    },
+
+    {
+      id: 1,
+      offer_type: 'tire_fix',
+      title: 'Демонтаж шины',
+      first_price: 120,
+      second_price: 160,
+      third_price: 170,
+      fourth_price: 200,
+      fifth_price: 240,
+      sixth_price: 270,
+      seventh_price: 350,
+      eighth_price: 380,
+    },
+
+    {
+      id: 2,
+      offer_type: 'tire_fix',
+      title: 'Монтаж шины',
+      first_price: 120,
+      second_price: 170,
+      third_price: 200,
+      fourth_price: 220,
+      fifth_price: 240,
+      sixth_price: 270,
+      seventh_price: 350,
+      eighth_price: 380,
+    },
+
+    {
+      id: 3,
+      offer_type: 'tire_fix',
+      title: 'Балансировка колеса',
+      first_price: 230,
+      second_price: 240,
+      third_price: 280,
+      fourth_price: 330,
+      fifth_price: 460,
+      sixth_price: 500,
+      seventh_price: 600,
+      eighth_price: 650,
+    },
+
+    {
+      id: 4,
+      offer_type: 'tire_fix',
+      title: 'Полный комплекс за 1 колесо',
+      first_price: 590,
+      second_price: 700,
+      third_price: 800,
+      fourth_price: 930,
+      fifth_price: 1140,
+      sixth_price: 1260,
+      seventh_price: 1550,
+      eighth_price: 1660,
+    },
+
+    {
+      id: 5,
+      offer_type: 'tire_fix',
+      title: 'Полный комплекс за 1 комплект',
+      first_price: 2360,
+      second_price: 2800,
+      third_price: 3200,
+      fourth_price: 3720,
+      fifth_price: 4560,
+      sixth_price: 5040,
+      seventh_price: 6200,
+      eighth_price: 6640,
+    },
+
+    {
+      id: 6,
+      offer_type: 'tire_fix',
+      title: 'Рапфлет  комплект',
+      first_price: '+1000',
+      second_price: '+1000',
+      third_price: '+1000',
+      fourth_price: '+1000',
+      fifth_price: '+1000',
+      sixth_price: '+1000',
+      seventh_price: '+1000',
+      eighth_price: '+1000',
+    },
+  ];
+  const offerCollectionFourth = [
+    {
+      id: 0,
+      offer_type: 'tire_fix',
+      title: 'Cнятие и установка колеса',
+      first_price: 140,
+      second_price: 160,
+      third_price: 180,
+      fourth_price: 210,
+      fifth_price: 230,
+      sixth_price: 250,
+      seventh_price: 270,
+      eighth_price: 300,
+    },
+
+    {
+      id: 1,
+      offer_type: 'tire_fix',
+      title: 'Демонтаж шины',
+      first_price: 140,
+      second_price: 160,
+      third_price: 180,
+      fourth_price: 220,
+      fifth_price: 250,
+      sixth_price: 270,
+      seventh_price: 310,
+      eighth_price: 320,
+    },
+
+    {
+      id: 2,
+      offer_type: 'tire_fix',
+      title: 'Монтаж шины',
+      first_price: 160,
+      second_price: 180,
+      third_price: 210,
+      fourth_price: 250,
+      fifth_price: 300,
+      sixth_price: 330,
+      seventh_price: 420,
+      eighth_price: 450,
+    },
+
+    {
+      id: 3,
+      offer_type: 'tire_fix',
+      title: 'Балансировка колеса',
+      first_price: 275,
+      second_price: 325,
+      third_price: 355,
+      fourth_price: 375,
+      fifth_price: 485,
+      sixth_price: 535,
+      seventh_price: 675,
+      eighth_price: 700,
+    },
+
+    {
+      id: 4,
+      offer_type: 'tire_fix',
+      title: 'Полный комплекс за 1 колесо',
+      first_price: 715,
+      second_price: 825,
+      third_price: 925,
+      fourth_price: 1055,
+      fifth_price: 1265,
+      sixth_price: 1385,
+      seventh_price: 1675,
+      eighth_price: 1770,
+    },
+
+    {
+      id: 5,
+      offer_type: 'tire_fix',
+      title: 'Полный комплекс за 1 комплект',
+      first_price: 2860,
+      second_price: 3300,
+      third_price: 3700,
+      fourth_price: 4220,
+      fifth_price: 5060,
+      sixth_price: 5540,
+      seventh_price: 6700,
+      eighth_price: 7080,
+    },
+
+    {
+      id: 6,
+      offer_type: 'tire_fix',
+      title: 'Рапфлет  комплект',
+      first_price: '+1000',
+      second_price: '+1000',
+      third_price: '+1000',
+      fourth_price: '+1000',
+      fifth_price: '+1000',
+      sixth_price: '+1000',
+      seventh_price: '+1000',
+      eighth_price: '+1000',
+    },
+  ];
+
 </script>
+
+//= templates/react.html
 </body>
 </html>

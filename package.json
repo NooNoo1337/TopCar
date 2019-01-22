@@ -51,5 +51,9 @@
     "stylelint": "^9.9.0",
     "stylelint-config-htmlacademy": "^0.1.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2"
+  },
+  "keywords": []
 }
