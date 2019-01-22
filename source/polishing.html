@@ -31,30 +31,8 @@
         <h2 class="offer__title second-title">
           Прайс-лист на услуги
         </h2>
-        <table class="offer__table" id="polishing_table">
-          <tr>
-            <th>
-               Полировочные работы:
-            </th>
 
-            <th>
-              1 класс
-            </th>
-
-            <th>
-              2 класс
-            </th>
-
-            <th>
-              3 класс
-            </th>
-
-            <th>
-              4 класс
-            </th>
-          </tr>
-
-        </table>
+        <div class="offer__table-container" id="offer__table-container"></div>
       </div>
     </section>
 
@@ -86,6 +64,146 @@
         });
   }
 
+  const offerCollection = [
+    {
+      id: 0,
+      title: 'Глубокая очистка ЛКП',
+      first_price: 1500,
+      second_price: 2000,
+      third_price: 2500,
+      fourth_price: 3000,
+    },
+
+    {
+      id: 1,
+      title: 'Полировка 1ой вертикальной детали',
+      first_price: 600,
+      second_price: 700,
+      third_price: 800,
+      fourth_price: 1000,
+    },
+
+    {
+      id: 2,
+      title: 'Полировка 1ой горизонтальной детали',
+      first_price: 1200,
+      second_price: 1400,
+      third_price: 1500,
+      fourth_price: 2000,
+    },
+
+    {
+      id: 3,
+      title: 'Полировка 1ой фары',
+      first_price: 500,
+      second_price: 500,
+      third_price: 500,
+      fourth_price: 500,
+    },
+
+    {
+      id: 4,
+      title: 'Полная полировка автомобиля',
+      add_info: '(все полировочные услуги)',
+      first_price: 8000,
+      second_price: 9000,
+      third_price: 10000,
+      fourth_price: 12000,
+    },
+
+    {
+      id: 5,
+      title: 'Дополнительная обработка 1ой детали',
+      first_price: 600,
+      second_price: 700,
+      third_price: 800,
+      fourth_price: 1000,
+    },
+
+    {
+      id: 6,
+      title: 'Дополнительная обработка крыши или капота',
+      first_price: 1200,
+      second_price: 1400,
+      third_price: 1500,
+      fourth_price: 2000,
+    },
+
+    {
+      id: 7,
+      title: 'Дополнительная обработка всего кузова',
+      first_price: 5000,
+      second_price: 9000,
+      third_price: 10000,
+      fourth_price: 12000,
+    },
+
+    {
+      id: 8,
+      title: 'Восстановление глянца',
+      first_price: 4000,
+      second_price: 4500,
+      third_price: 5000,
+      fourth_price: 6000,
+    },
+
+    {
+      id: 9,
+      title: 'Нано-обработка лобового стекла',
+      first_price: 1000,
+      second_price: 1200,
+      third_price: 1400,
+      fourth_price: 1600,
+    },
+
+    {
+      id: 10,
+      title: 'Нано-обработка всх стекл, зеркал и фар',
+      first_price: 2500,
+      second_price: 3000,
+      third_price: 3500,
+      fourth_price: 4000,
+    },
+
+    {
+      id: 11,
+      title: 'Обработка Лкл "НАНО_ЛАК"',
+      first_price: 5000,
+      second_price: 5500,
+      third_price: 6000,
+      fourth_price: 7000,
+    },
+
+    {
+      id: 12,
+      title: 'Защитная полировка "MEGUIAR\'S"',
+      first_price: 2500,
+      second_price: 3000,
+      third_price: 3500,
+      fourth_price: 4000,
+    },
+
+    {
+      id: 13,
+      title: 'Защитная полировка жидким стеклом',
+      first_price: 10000,
+      second_price: 12000,
+      third_price: 15000,
+      fourth_price: 18000,
+    },
+
+    {
+      id: 14,
+      title: 'Защитная кермамическая обработка кузова',
+      first_price: 15000,
+      second_price: 17000,
+      third_price: 20000,
+      fourth_price: 25000,
+    },
+  ];
+
 </script>
+
+//= templates/react.html
 </body>
 </html>

@@ -6,6 +6,7 @@ self.addEventListener('install', function(e) {
       return cache.addAll([
         '/',
         '/css/style.min.css',
+        '/img/',
       ]);
     })
   );

@@ -32,30 +32,8 @@
         <h2 class="offer__title second-title">
           Прайс-лист на услуги
         </h2>
-        <table class="offer__table" id="dry_cleaning_table">
-          <tr>
-            <th>
-              Химчистка:
-            </th>
 
-            <th>
-              1 класс
-            </th>
-
-            <th>
-              2 класс
-            </th>
-
-            <th>
-              3 класс
-            </th>
-
-            <th>
-              4 класс
-            </th>
-          </tr>
-
-        </table>
+        <div class="offer__table-container" id="offer__table-container"></div>
       </div>
     </section>
 
@@ -87,6 +65,75 @@
         });
   }
 
+  const offerCollection = [
+    {
+      title: 'Химчистка потолка',
+      first_price: 1000,
+      second_price: 1500,
+      third_price: 2000,
+      fourth_price: 2500,
+    },
+
+    {
+      title: 'Химчистка пола',
+      first_price: 1500,
+      second_price: 2000,
+      third_price: 2500,
+      fourth_price: 3000,
+    },
+
+    {
+      title: 'Химчистка сидений',
+      first_price: 2000,
+      second_price: 2000,
+      third_price: 2000,
+      fourth_price: 2000,
+    },
+
+    {
+      title: 'Химчистка обшивки дверей',
+      first_price: 1000,
+      second_price: 1000,
+      third_price: 1500,
+      fourth_price: 1500,
+    },
+
+    {
+      title: 'Химчистка приборной панели',
+      first_price: 1000,
+      second_price: 1000,
+      third_price: 1500,
+      fourth_price: 1500,
+    },
+
+    {
+      title: 'Химчистка напольного коврика',
+      first_price: 200,
+      second_price: 200,
+      third_price: 200,
+      fourth_price: 200,
+    },
+
+    {
+      title: 'Химчистка багажника',
+      first_price: 1000,
+      second_price: 1000,
+      third_price: 1500,
+      fourth_price: 1500,
+    },
+
+    {
+      title: 'Полная химчистка, включает услуги: 1, 2, 3, 4, 5, 6',
+      add_info: '(включает в себя все виды услуг по химчистке)',
+      first_price: 5000,
+      second_price: 7000,
+      third_price: 8000,
+      fourth_price: 9000,
+    },
+
+  ];
 </script>
+
+//= templates/react.html
 </body>
 </html>

@@ -32,30 +32,8 @@
         <h2 class="offer__title second-title">
           Прайс-лист на услуги
         </h2>
-        <table class="offer__table">
-          <tr>
-            <th>
-              Чистка + защита хромированных деталей:
-            </th>
 
-            <th>
-              1 класс
-            </th>
-
-            <th>
-              2 класс
-            </th>
-
-            <th>
-              3 класс
-            </th>
-
-            <th>
-              4 класс
-            </th>
-          </tr>
-
-        </table>
+        <div class="offer__table-container" id="offer__table-container"></div>
       </div>
     </section>
 
@@ -87,6 +65,28 @@
         });
   }
 
+  const offerCollection = [
+    {
+      id: 0,
+      title: 'Решетка радиатора, накладки дв., багажника, бампера, насадки труб',
+      first_price: 700,
+      second_price: 700,
+      third_price: 700,
+      fourth_price: 700,
+    },
+
+    {
+      id: 1,
+      title: 'Передняя защитная решетка',
+      first_price: 300,
+      second_price: 300,
+      third_price: 300,
+      fourth_price: 300,
+    },
+  ];
+
 </script>
+
+//= templates/react.html
 </body>
 </html>
