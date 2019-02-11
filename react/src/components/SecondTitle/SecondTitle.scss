@@ -1,0 +1,66 @@
+.second-title {
+  position: relative;
+
+  width: fit-content;
+  margin: 0 auto;
+
+  font-family: "Roboto Bold","Arial",sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+
+  &--white {
+    color: white;
+  }
+
+  &:after, &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+
+    width: 50px;
+    height: 1px;
+
+    background-color: black;
+  }
+
+  &:after {
+    right: -70px;
+  }
+
+  &:before {
+    left: -70px;
+  }
+}
+
+.second-title--white {
+  &:after, &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+
+    width: 50px;
+    height: 1px;
+
+    background-color: white;
+  }
+}
+
+@media (min-width: 400px) {
+  .second-title {
+    width: fit-content;
+
+    &:after, &:before {
+      width: 80px;
+    }
+
+    &:after {
+      right: -110px;
+    }
+
+
+    &:before {
+      left: -110px;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+// regular
+@font-face {
+  font-family: "Roboto Regular";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+
+  src: url("../fonts/roboto-regular.woff") format("woff"),
+  url("../fonts/roboto-regular.ttf") format("ttf");
+}
+
+// medium
+@font-face {
+  font-family: "Roboto Medium";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+
+  src: url("../fonts/roboto-medium.woff") format("woff"),
+  url("../fonts/roboto-medium.ttf") format("ttf");
+}
+
+// bold
+@font-face {
+  font-family: "Roboto Bold";
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+
+  src: url("../fonts/roboto-bold.woff") format("woff"),
+  url("../fonts/roboto-bold.ttf") format("ttf");
+}
+
+// light
+@font-face {
+  font-family: "Roboto Light";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+
+  src: url("../fonts/roboto-light.woff") format("woff"),
+  url("../fonts/roboto-light.ttf") format("ttf");
+}
+
+// Thin
+@font-face {
+  font-family: "Roboto Thin";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+
+  src: url("../fonts/roboto-thin.woff") format("woff"),
+  url("../fonts/roboto-thin.ttf") format("ttf");
+}
+
+// Porter Sans
+// Thin
+@font-face {
+  font-family: "Porter Sans";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+
+  src: url("../fonts/porter-sans-block.woff") format("woff");
+}

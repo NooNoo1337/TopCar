@@ -1,0 +1,75 @@
+$yellow-color: #FFF61F;
+$grey-bg: #f3f3f3;
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  max-width: 620px;
+  padding: 30px;
+
+  background-color: black;
+
+  color: white;
+}
+
+.popup h4 {
+  position: relative;
+
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
+
+  &:after {
+    content: "";
+    position: absolute;
+    transform: translate(-50%, 0%);
+    left: 50%;
+    bottom: -10px;
+
+    width: 80px;
+    height: 1px;
+
+    background-color: $yellow-color;
+  }
+}
+
+.popup p {
+  font-size: 18px;
+  margin-top: 45px;
+}
+
+.popup ul {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.popup li:before {
+  content: "⬥";
+  position: absolute;
+  left: -1px;
+}
+
+.popup li + li {
+  margin-top: 10px;
+}
+
+.popup span {
+  font-size: 18px;
+  color: $yellow-color;
+}
+
+.popup__close {
+  margin-left: auto;
+
+  font-size: 0;
+
+  background: transparent;
+  border: transparent;
+}
+
+.popup__close-icon {
+  width: 20px;
+  height: 20px;
+
+  fill: white;
+}

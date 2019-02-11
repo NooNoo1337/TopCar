@@ -1,0 +1,28 @@
+body {
+  min-width: 320px;
+  font-family: "Roboto Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+
+  &.fixed {
+    overflow: hidden;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
