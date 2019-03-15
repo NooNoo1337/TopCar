@@ -142,7 +142,7 @@
     z-index: 2;
 
     width: 100vw;
-    padding: 20px;
+    padding: 30px 40px;
 
     box-shadow: 0 0 9px 0 rgba(0,0,0,.09);
     background: white;
@@ -170,18 +170,12 @@
   }
 
   .header__drop-list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 600px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
   }
 
-  .header__drop-list li {
-    margin-top: 15px;
-    width: 45%;
-  }
-
-  .header__drop-list li a {
+  .header__drop-list a {
     padding: 5px 5px 5px 0;
     color: black;
 
@@ -233,6 +227,10 @@
     &--phone {
       display: none;
     }
+  }
+
+  .header__drop-list {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .header__link--phone {
