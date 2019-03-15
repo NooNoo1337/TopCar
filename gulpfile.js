@@ -87,11 +87,11 @@ gulp.task('html', function () {
 
 // TYPOGRAF
 // typograf all texts
-// gulp.task('typography', function() {
-//   return gulp.src(path.build.html)
-//       .pipe(typography({ locale: ['ru', 'en-US'] }))
-//       .pipe(gulp.dest(path.build.html));
-// });
+gulp.task('typography', function() {
+  return gulp.src(path.build.html)
+      .pipe(typography({ locale: ['ru', 'en-US'] }))
+      .pipe(gulp.dest(path.build.html));
+});
 
 // JS
 // make sourcemap
@@ -224,23 +224,6 @@ gulp.task("copy", function() {
   .pipe(gulp.dest("build"));
 });
 
-// gulp.task('watch', function(){
-//   watch([path.watch.html], function(event, cb) {
-//     gulp.start('html');
-//   });
-//   watch([path.watch.style], function(event, cb) {
-//     gulp.start('style');
-//   });
-//   watch([path.watch.js], function(event, cb) {
-//     gulp.start('js');
-//   });
-//   watch([path.watch.img], function(event, cb) {
-//     gulp.start('img');
-//   });
-//   watch([path.watch.fonts], function(event, cb) {
-//     gulp.start('fonts');
-//   });
-// });
 
 // COMMENTS
 // delete all comments in build version of project
@@ -263,15 +246,15 @@ gulp.task("build", function (done) {
       'clean',
       'copy',
       'html',
-      // 'typography',
+      'typography',
       'stripComments',
       'style',
       'js',
       'react',
-      // 'fonts',
-      // 'images',
-      // 'img',
-      // 'webp',
+      'fonts',
+      'images',
+      'img',
+      'webp',
       'sprite',
       done
   );

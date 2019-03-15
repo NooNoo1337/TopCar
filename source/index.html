@@ -253,56 +253,55 @@
     </section>
 
     <section class="promotions" id="promotions">
-      <div class="promotions__wrapper wrapper">
-        <div class="promotion__bg"></div>
-        <h2 class="promotions__title second-title second-title--white">Акции</h2>
-        <ul class="promotions__list">
-          <li class="promotions__item">
-            <a class="promotions__link" data-fancybox data-src="#modal-1" href="javascript:;">
-              <h3 class="promotion__subtitle">
-                Скидка за пост
-              </h3>
-            </a>
-            <div style="display: none;" id="modal-1" class="promotions__popup popup">
-              <h4>Cкидка за пост</h4>
 
-              <p>Условия акции:</p>
+      <div class="promotions__parallax">
+        <div class="promotions__wrapper wrapper">
+          <div class="promotion__bg"></div>
+          <h2 class="promotions__title second-title second-title--white">Акции</h2>
+          <ul class="promotions__list">
+            <li class="promotions__item">
+              <a class="promotions__link" data-fancybox data-src="#modal-1" href="javascript:;">
+                <h3 class="promotion__subtitle">
+                  Скидка за пост
+                </h3>
+              </a>
+              <div style="display: none;" id="modal-1" class="promotions__popup popup">
+                <p>Условия акции:</p>
 
-              <ul class="promotions__conditions">
-                <li class="promotions__condition">
-                  подпишитесь на нас в instagram;
-                </li>
+                <ul class="promotions__conditions">
+                  <li class="promotions__condition">
+                    подпишитесь на нас в instagram;
+                  </li>
 
-                <li class="promotions__condition">
-                  опубликуйте пост с фотографией свой машины и с хештэгом <span>#topcarcleaning</span>;
-                </li>
+                  <li class="promotions__condition">
+                    опубликуйте пост с фотографией свой машины и с хештэгом <span>#topcarcleaning</span>;
+                  </li>
 
-                <li class="promotions__condition">
-                  покажи этот пост менеджеру и получи скидку <span class="percent">20%</span>!
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="promotions__item">
-            <a href="#" class="promotions__link" data-fancybox data-src="#modal-2" href="javascript:;">
-              <h3 class="promotion__subtitle">
-                Каждая 10-ая мойка в подарок
-              </h3>
-            </a>
+                  <li class="promotions__condition">
+                    покажи этот пост менеджеру и получи скидку <span class="percent">20%</span>!
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="promotions__item">
+              <a href="#" class="promotions__link" data-fancybox data-src="#modal-2" href="javascript:;">
+                <h3 class="promotion__subtitle">
+                  Каждая 10-ая мойка в подарок
+                </h3>
+              </a>
 
-            <div style="display: none;" id="modal-2" class="promotions__popup popup">
-              <h4>Каждая 10ая мойка в подарок</h4>
+              <div style="display: none;" id="modal-2" class="promotions__popup popup">
+                <p>
+                  После первого посещения мойки вы получите карту, на которой будут фиксироваться ваши визиты. <br>
+                </p>
+                <p>
+                  После 9 моек - <span class="percent" style="font-size: 20px">10ая в подарок!</span>
+                </p>
+              </div>
 
-              <p>
-                После первого посещения мойки вы получите карту, на которой будут фиксироваться ваши визиты. <br>
-              </p>
-              <p>
-                После 9 моек - <span class="percent" style="font-size: 20px">10ая в подарок!</span>
-              </p>
-            </div>
-
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -328,16 +327,5 @@
 <script src="js/libs/fancybox.min.js"></script>
 
 <script src="js/main.js"></script>
-
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker
-        .register('/service-worker.js')
-        .then(function () {
-          console.log("Service Worker Registered");
-        });
-  }
-
-</script>
 </body>
 </html>

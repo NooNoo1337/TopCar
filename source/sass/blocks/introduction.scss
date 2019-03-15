@@ -3,16 +3,6 @@
 
   padding-top: 60px;
   margin-top: -3px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.45);
-  }
 }
 
 .introduction__bg {
@@ -24,7 +14,7 @@
   width: 100%;
   height: 100%;
 
-  background-image: url("../../img/intro_bg_mobile.webp"), url("../../img/intro_bg_mobile.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../../img/intro_bg_mobile.webp"), url("../../img/intro_bg_mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

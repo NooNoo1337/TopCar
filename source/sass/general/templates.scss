@@ -96,7 +96,10 @@
 
 .popup p {
   font-size: 18px;
-  margin-top: 45px;
+}
+
+.popup p + p {
+  margin-top: 25px;
 }
 
 .popup ul {
