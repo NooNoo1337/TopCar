@@ -1,7 +1,7 @@
 // scroll to element
 $(document).ready(function () {
   $('.scroll-link').click(function () {
-    var elementClick = $(this).attr('href');
+    var elementClick = $(this).attr('data-href');
     var destination = $(elementClick).offset().top;
 
     var hamburger_button = $('.header__menu-button'),

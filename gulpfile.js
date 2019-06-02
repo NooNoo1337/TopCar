@@ -67,7 +67,7 @@ var config = {
   },
   tunnel: true,
   host: 'localhost',
-  port: 3000,
+  port: 3001,
   logPrefix: "NooNoo"
 };
 
@@ -235,9 +235,9 @@ gulp.task('stripComments', function () {
 
 // WEBSERVER
 // run webserver
-gulp.task('webserver', function () {
-  browserSync(config);
-});
+// gulp.task('webserver', function () {
+//   browserSync(config);
+// });
 
 // BUILD
 // all gulp tasks
